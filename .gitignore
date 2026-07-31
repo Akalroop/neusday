@@ -1,5 +1,9 @@
 # Venvs
-.langchain
+.venv
 
 #env
 .env
+
+
+#metadata
+.python-version
