@@ -1,7 +1,9 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-os.environ["GOOGLE_API_KEY"]= ""
 from langchain.agents import create_agent
+
 
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
@@ -10,10 +12,11 @@ def get_weather(city: str) -> str:
 agent = create_agent(
     model="google_genai:gemini-3.6-flash",
     tools=[get_weather],
-    system_prompt="You are a helpful assistant.",
+    system_prompt="You are a helpful assistant."
 )
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": "What's the weather in Manipur?"}]}
 )
 print(result["messages"][-1].content)
+
