@@ -1,0 +1,7 @@
+llm:
+  provider: ollama
+  model:
+  tempertaure: 0.2
+
+rss:
+  max_feeds: 10

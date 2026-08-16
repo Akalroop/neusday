@@ -1,0 +1,14 @@
+{
+	"feeds": [
+		"newslaundry.com",
+		"twitter.com" ,
+		"digit.com",
+		"bikewale.com"
+	],
+	"allowed_domains": [
+		"newslaundry.com",
+		"twitter.com",
+		"digit.com",
+		"bikewale.com"
+	]
+}
